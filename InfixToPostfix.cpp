@@ -1,7 +1,7 @@
 /*
     a. Implementation of Stack (all data types) 
     b. validation of mathematical expression
-        1. check for correct occurance of brackets
+        1. check for correct occurence of brackets
         2. check for valid characters
     c. infix to postfix conversion 
     d. evaluation of postfix expression
@@ -333,7 +333,7 @@ queue<string> InfixToPostfix::splitOperands()
     int i = 0;
     while (i <= (exp.length()))
     {
-        // if operator, bracket or space is found, push numb into queue
+        // if operator, bracket or space is encountered, push numb into queue
         if (isOperator(exp[i]) || isBracket(exp[i]) || i == exp.length() || isspace(exp[i]))
         {
             if (numb != "")
